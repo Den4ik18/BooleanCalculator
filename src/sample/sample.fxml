@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane alignment="center" hgap="10" prefHeight="478.0" prefWidth="364.0" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="520.0" prefWidth="364.0">
+         <children>
+            <ComboBox fx:id="firstOperant" layoutX="14.0" layoutY="27.0" prefHeight="25.0" prefWidth="127.0" />
+            <ComboBox fx:id="secondOperant" layoutX="209.0" layoutY="27.0" prefHeight="25.0" prefWidth="127.0" />
+            <Label alignment="TOP_LEFT" layoutX="61.0" layoutY="6.0" prefHeight="21.0" prefWidth="39.0" text="First">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="RIGHT" layoutX="248.0" layoutY="6.0" text="Second">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="conjuncture" layoutX="2.0" layoutY="127.0" mnemonicParsing="false" onAction="#Conjuncture" prefHeight="87.0" prefWidth="90.0" stylesheets="@Conjuncture.css" text="^" />
+            <TextField fx:id="txtRezult" alignment="CENTER" layoutX="61.0" layoutY="58.0" prefHeight="57.0" prefWidth="224.0">
+               <font>
+                  <Font size="30.0" />
+               </font></TextField>
+            <Button fx:id="disjunction" layoutX="92.0" layoutY="127.0" mnemonicParsing="false" onAction="#Disjunction" prefHeight="87.0" prefWidth="90.0" stylesheets="@Conjuncture.css" text="v" />
+            <Button layoutX="182.0" layoutY="127.0" mnemonicParsing="false" onAction="#Xor" prefHeight="87.0" prefWidth="90.0" stylesheets="@Conjuncture.css" text="⊕" fx:id="xor" />
+            <Button fx:id="implication" layoutX="2.0" layoutY="214.0" mnemonicParsing="false" onAction="#Implication" prefHeight="87.0" prefWidth="90.0" stylesheets="@Conjuncture.css" text="→" />
+            <Button layoutX="272.0" layoutY="127.0" mnemonicParsing="false" onAction="#Xnor" prefHeight="87.0" prefWidth="90.0" stylesheets="@Conjuncture.css" text="~" fx:id="xnor" />
+            <Button fx:id="nand" layoutX="182.0" layoutY="214.0" mnemonicParsing="false" onAction="#Nand" prefHeight="87.0" prefWidth="90.0" stylesheets="@Conjuncture.css" text="|" />
+            <Button fx:id="reverseImplication" layoutX="92.0" layoutY="214.0" mnemonicParsing="false" onAction="#ReverseImplication" prefHeight="87.0" prefWidth="90.0" stylesheets="@Conjuncture.css" text="←" />
+            <Button fx:id="nor" layoutX="272.0" layoutY="214.0" mnemonicParsing="false" onAction="#Nor" prefHeight="87.0" prefWidth="90.0" stylesheets="@Conjuncture.css" text="↓" />
+            <Button fx:id="iditicalZero" layoutX="1.0" layoutY="300.0" mnemonicParsing="false" onAction="#InditicalZero" prefHeight="87.0" prefWidth="90.0" stylesheets="@Conjuncture.css" text="O" />
+            <Button fx:id="inverseImplication" layoutX="92.0" layoutY="300.0" mnemonicParsing="false" onAction="#InverseImplication" prefHeight="87.0" prefWidth="90.0" stylesheets="@Conjuncture.css" text="&gt;" />
+            <Button fx:id="inverseFirstOperand" layoutX="182.0" layoutY="300.0" mnemonicParsing="false" onAction="#InverseFirstOperand" prefHeight="87.0" prefWidth="90.0" stylesheets="@Conjuncture.css" text="&lt;" />
+            <Button fx:id="negationSecondOperand" layoutX="272.0" layoutY="300.0" mnemonicParsing="false" onAction="#NegationSecondOperand" prefHeight="87.0" prefWidth="90.0" stylesheets="@Conjuncture.css" text="!2" />
+            <Button fx:id="negationFirstOperand" layoutX="1.0" layoutY="387.0" mnemonicParsing="false" onAction="#NegationFirstOperand" prefHeight="87.0" prefWidth="90.0" stylesheets="@Conjuncture.css" text="!1" />
+            <Button fx:id="firstOperand" layoutX="92.0" layoutY="387.0" mnemonicParsing="false" onAction="#FirstOperand" prefHeight="87.0" prefWidth="90.0" stylesheets="@Conjuncture.css" text="1" />
+            <Button fx:id="SecondOperand" layoutX="182.0" layoutY="387.0" mnemonicParsing="false" onAction="#SecondOperand" prefHeight="87.0" prefWidth="90.0" stylesheets="@Conjuncture.css" text="2" />
+            <Button fx:id="tautology" layoutX="272.0" layoutY="387.0" mnemonicParsing="false" onAction="#Tautology" prefHeight="87.0" prefWidth="90.0" stylesheets="@Conjuncture.css" text="T" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>
